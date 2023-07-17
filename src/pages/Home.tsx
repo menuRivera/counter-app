@@ -40,26 +40,26 @@ const Home: React.FC = () => {
 					</IonRow>
 					<IonRow>
 						<IonCol>
-							<IonButton fill='outline' onClick={() => decrement()}>-1</IonButton>
-						</IonCol>
-						<IonCol>
 							<IonButton id='reset-button' color='danger' onClick={vibrate}>Reset</IonButton>
 						</IonCol>
-					</IonRow>
-					<IonRow>
 						<IonCol>
-							<IonButton className='bigger' onClick={() => increment()}>+1</IonButton>
-						</IonCol>
-						<IonCol>
-							<IonButton className='bigger' onClick={() => increment(2)}>+2</IonButton>
+							<IonButton fill='outline' color='dark' onClick={() => decrement()}>-1</IonButton>
 						</IonCol>
 					</IonRow>
 					<IonRow>
 						<IonCol>
-							<IonButton className='bigger' onClick={() => increment(4)}>+4</IonButton>
+							<IonButton className='bigger' color='light' onClick={() => increment()}>+1</IonButton>
 						</IonCol>
 						<IonCol>
-							<IonButton className='bigger' onClick={() => increment(6)}>+6</IonButton>
+							<IonButton className='bigger' color='light' onClick={() => increment(2)}>+2</IonButton>
+						</IonCol>
+					</IonRow>
+					<IonRow>
+						<IonCol>
+							<IonButton className='bigger' color='light' onClick={() => increment(4)}>+4</IonButton>
+						</IonCol>
+						<IonCol>
+							<IonButton className='bigger' color='light' onClick={() => increment(6)}>+6</IonButton>
 						</IonCol>
 					</IonRow>
 				</IonGrid>
